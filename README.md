@@ -7,7 +7,7 @@ Este projeto implementa um simples chat multi-cliente e multi-salas usando socke
 
 * **Chat Multi-Cliente:** O servidor utiliza *threading* para lidar com múltiplos clientes simultaneamente.
 * **Salas de Chat:** Os usuários podem criar e entrar em diferentes salas usando o comando `/join #nome_da_sala`.
-* **Criação Dinâmica de Salas:** As salas são criadas automaticamente quando o primeiro usuário entra e são removidas quando o último usuário sai.
+* **Criação Dinâmica de Salas:** As salas são criadas automaticamente quando usa o comando `/join #nome_da_sala`.
 * **Comandos Básicos:** Suporta comandos como `/join`, `/exit` e `/quit`.
 
 ## Requisitos
@@ -22,7 +22,7 @@ Para conectar duas máquinas na mesma rede, você precisar configurar um IP est�
 
 ### Passo 1: Configuração de Rede (Máquina Servidor)
 
-As instruções abaixo são um exemplo para sistemas baseados em Debian (como Debian, Ubuntu antigo) que usam o arquivo `/etc/network/interfaces`.
+As instruções abaixo são um exemplo para sistemas baseados em Debian que usam o arquivo `/etc/network/interfaces`.
 
 1.  **Encontre sua interface de rede:**
     Use o comando `ip a` ou `ifconfig` para descobrir o nome da sua interface de rede (ex: `eth0`, `enp0s3`).
@@ -66,21 +66,3 @@ As instruções abaixo são um exemplo para sistemas baseados em Debian (como De
     ```bash
     python3 TCPClient.py
     ```
-
-
-## Como Usar o Chat
-
-1.  **Conectar:** Siga o "Passo 3" acima.
-2.  **Entrar em uma Sala:** Você deve entrar em uma sala para enviar mensagens.
-    ```
-    > /join #geral
-    ```
-3.  **Conversar:** Qualquer texto que não comece com `/`.
-    ```
-    > Olá, mundo!
-    ```
-4.  **Sair:** Para desconectar do servidor, digite:
-    ```
-    > /exit
-    ```
-    (ou `/quit`)
