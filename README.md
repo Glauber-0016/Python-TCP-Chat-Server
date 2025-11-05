@@ -1,6 +1,8 @@
 # Python TCP Chat Server
 
-Este projeto implementa um simples chat multi-cliente e multi-salas usando sockets TCP em Python. Ele é composto por dois scripts principais:
+### **Este projeto foi feito para a materia de redes de computadores pelos alunos: Glauber Moreira, Larissa Miranda, Rafael Muniz.** 
+
+Ele implementa um simples chat multi-cliente e multi-salas usando sockets TCP em Python. Ele é composto por dois scripts principais:
 
 * `TCPServer.py`: O script do servidor que gerencia conexões, salas e a distribuição de mensagens.
 * `TCPClient.py`: O script do cliente que permite aos usuários se conectarem ao servidor, entrarem em salas e trocarem mensagens.
